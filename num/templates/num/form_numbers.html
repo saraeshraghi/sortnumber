@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RegistrationForm_v7 by Colorlib</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet"
+          href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="inner">
+        <form action="#" method="post">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" value="soudi" name="soudi">Ascending
+                <i class="zmdi zmdi-arrow-right"></i>
+            </button>
+            <button type="submit" value="nozouli" name="nozouli">Descending
+                <i class="zmdi zmdi-arrow-right"></i>
+            </button>
+        </form>
+        {#				<form action="">#}
+        {#					<h3>Contact Us</h3>#}
+        {#					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>#}
+        {#					<label class="form-group">#}
+        {#						<input type="text" class="form-control"  required>#}
+        {#						<span>Your Name</span>#}
+        {#						<span class="border"></span>#}
+        {#					</label>#}
+        {#					<label class="form-group">#}
+        {#						<input type="text" class="form-control"  required>#}
+        {#						<span for="">Your Mail</span>#}
+        {#						<span class="border"></span>#}
+        {#					</label>#}
+        {#					<label class="form-group" >#}
+        {#						<textarea name="" id="" class="form-control" required></textarea>#}
+        {#						<span for="">Your Message</span>#}
+        {#						<span class="border"></span>#}
+        {#					</label>#}
+        {#					<button>Submit#}
+        {#						<i class="zmdi zmdi-arrow-right"></i>#}
+        {#					</button>#}
+        {#				</form>#}
+    </div>
+</div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
